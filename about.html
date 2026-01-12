@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Personal Shape</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f7fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      z-index: 1000;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 600;
+      color: #6d6ee8;
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav a {
+      color: #111827;
+      font-weight: 500;
+    }
+    .about {
+      padding: 120px 20px;
+      background: #f8f7fc;
+    }
+
+    .about-container {
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      max-width: 650px;
+      margin: 10px auto 60px;
+      color: #6b7280;
+    }
+
+    .about-card {
+      position: relative;
+      border-radius: 28px;
+      padding: 70px 50px;
+      background: linear-gradient(135deg, #6d6ee8, #8b5cf6, #ec4899);
+      overflow: hidden;
+    }
+
+    .about-content {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(14px);
+      border-radius: 24px;
+      padding: 50px;
+      color: #ffffff;
+      text-align: left;
+      position: relative;
+      z-index: 2;
+    }
+
+    .about-content h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      margin-bottom: 18px;
+      color: #f1f5f9;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .skills span {
+      padding: 10px 20px;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.35);
+      font-size: 14px;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(30px);
+      opacity: 0.4;
+    }
+
+    .blob-1 {
+      width: 220px;
+      height: 220px;
+      background: #ffffff;
+      top: -60px;
+      left: -60px;
+    }
+
+    .blob-2 {
+      width: 300px;
+      height: 300px;
+      background: #000000;
+      bottom: -80px;
+      right: -80px;
+    }
+</style>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+      <div class="logo">Personal Shape</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/Portfolio">Portfolio</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Crafting meaningful digital experiences</p>
+
+      <div class="about-card">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+
+        <div class="about-content">
+          <h3>Frontend Developer & Designer</h3>
+          <p>I build modern, responsive websites using clean and readable code.</p>
+          <p>My focus is usability, performance, and visual clarity.</p>
+
+          <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>UI / UX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>

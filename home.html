@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Personal Shape</title>
+</head>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f7fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      z-index: 1000;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 600;
+      color: #6d6ee8;
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav a {
+      color: #111827;
+      font-weight: 500;
+    }
+
+    
+    .hero {
+      margin-top: 80px;
+      min-height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #6d83f2, #a06cd5, #e68bdc);
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 1;
+    }
+
+    .shape {
+      position: absolute;
+      background: rgba(255,255,255,0.25);
+      filter: blur(2px);
+    }
+
+    .circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      top: 20%;
+      left: 15%;
+    }
+
+    .circle2 {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      bottom: 18%;
+      right: 12%;
+    }
+
+    .square {
+      width: 140px;
+      height: 140px;
+      border-radius: 20px;
+      top: 55%;
+      left: 25%;
+      transform: rotate(45deg);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    .hero h1 {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #f1f5f9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 50px;
+      padding: 18px 44px;
+      border-radius: 40px;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: #ffffff;
+      backdrop-filter: blur(6px);
+    }
+</style>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+      <div class="logo">Personal Shape</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/Portfolio">Portfolio</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="shape circle"></div>
+    <div class="shape circle2"></div>
+    <div class="shape square"></div>
+
+    <div class="hero-content">
+      <h1>Transforming Ideas<br>Into Beautiful<br>Experiences</h1>
+      <p>I craft digital experiences that captivate, engage, and inspire.</p>
+      <a href="#contact" class="btn">Explore My Work</a>
+    </div>
+  </section>
+
+</body>
+</html>
